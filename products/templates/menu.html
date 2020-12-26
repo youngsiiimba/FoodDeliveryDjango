@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  {% block head %}  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Shed</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.scss' %}" />
+  </head>
+  {% endblock %}
+  
+  
+  <body>
+    {% block header %}    
+    <!-- Header-->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>The <span>Shed</span></h1>
+        </div>
+        <div class="currentDetails">
+          <div class="header-option">
+            <i data-feather="map-pin"></i>
+            <span>Dundee</span>
+          </div>
+          <div class="header-option">
+            <i data-feather="clock"></i>
+            <span>Deliver now</span>
+          </div>
+        </div>
+        <div class="searchBar">
+          <div class="header-option">
+            <i data-feather="search"></i>
+            <span>Search</span>
+          </div>
+          <div class="header-option">
+            <span>Sign in</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Options -->
+    <div class="options">
+        <div class="container">
+          <button class="options-btn selected">
+            <i data-feather="shopping-bag"></i>
+            <span>Delivery</span>
+          </button>
+          <button class="options-btn">
+            <i data-feather="watch"></i>
+            <span>Pick-up</span>
+          </button>
+        </div>
+      </div>
+    {% endblock %}

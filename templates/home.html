@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}{% endblock %}
+
+
+
+
+
+{% block content %}
+<link rel = "stylesheet" href="/styles/home.scss"/>
+<div class="container" >
+    <div class="logo">
+        <h1>The <span>Shed</span></h1>
+    </div>
+    <div class="currentDetails">
+        <div class="header-option">
+            <span>Dundee</span>
+        <div class="header-options">
+            <span>Deliver now</span>
+    </div>
+    <div class="searchBar">
+        <div class="header-option">
+            Search
+        </div>
+        <div class="header-option">
+            Sign in 
+        </div>
+    </div>        
+</div>
+<!-- collectionOptions-->
+<div class="options">
+    <div class="container">
+        <button class="options-btn" selected>
+            Delivery
+        </button>
+        <button class="options-btn">
+            Pick-up
+        </button>
+    </div>
+</div>
+<!-- Listing -->
+<div class="listings">
+    <div class="container">
+        <div class="header">
+            <div class="header-title">
+                <h2>Whether it's a 5 star restaurant, butcher or convenience store, we've got you covered!</h2>
+            </div>
+        </div>
+    </div>
+    <div class="listings-grid">
+        <div class="listings-grid-element">
+            <div class="image">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fthesheddundee%2F&psig=AOvVaw3J6kr4-zuvIFE_OC-SVL1u&ust=1609011491828000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPDbnY3x6e0CFQAAAAAdAAAAABAD" alt="Lising pic">
+            </div>
+            <div class="text">
+                <div class="text-title">
+                    <h3>The Shed</h3>
+                    <div class="info">
+                        <span>R12 delivery fee | 30 - 45 min |</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-lower">
+                <span class="smallText">
+                    Exquisite culinery dishes from our finest chefs
+                </span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://unpkg.com/feather-icons"></script>
+
+<script> feather.replace()</script>
+{% endblock %}

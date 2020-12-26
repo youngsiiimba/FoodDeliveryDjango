@@ -1,0 +1,106 @@
+:root {
+    --theShedBrown: #06c167
+    --font-family: sans-serif;
+    --color-grey: rgb(238, 238, 238);
+    --color-greyDarker: rgb(84, 84, 84);
+}
+* {
+    box-sizing: border-box;
+}
+
+.smallText {
+    font-size: 0.8rem;
+}
+
+
+body {
+    margin 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: calc(100% - 160px);
+    margin: auto; 
+}
+
+
+    .logo{
+        h1 {
+            font-weight: 300;
+            span {
+                font-weight: 600;
+                color: brown); 
+            }
+        }
+    }
+    .container{
+        display: flex;
+        align-items: center;
+    }
+    .searchBar{
+        margin-left:auto;
+    }
+    .header-option{
+        //font-size: 0.9rem
+        padding-left : 5rem;
+    }
+    .currenDetails,.searchBar {
+        display: flex;
+    }  
+
+
+.options {
+    padding: 1.2rem 0;
+    .options-btn {
+        background: var(--color-grey);
+        padding: 0.8rem 1.2rem;
+        border-radius: 30px;
+        border: 0;
+        font-family: var(--font-family);
+        font-size: 0.9rem;
+        letter-spacing: 0.6px;
+        %.selected{
+            background: black;
+            colour: white;
+        }
+    }
+}
+.listings {
+    padding: 2 rem 0;
+    .listings-grid{
+        .listings-grid-element{
+            width: 33%;
+            margin-top: 2rem;
+            .image {
+                height: 240px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .text-lower {
+                padding: 0.6rem 0;
+                span {
+                    color: var(--color-greyDarker)
+                }
+            }
+            .text {
+                border-bottom: 1px solid #ddd;
+                padding: 1rem 0;
+                h3{
+                    font-weight: 400;
+                    margin-bottom: 0.3rem;
+                    margin-top: 0;
+                }
+                span {
+                    font-size: 0.8rem;
+                    font-weight: 300;
+                    color: var(--color-greyDarker)
+                }
+            }
+        }
+    }
+}
+
